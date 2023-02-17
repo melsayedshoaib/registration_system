@@ -107,6 +107,11 @@ if (loginBtn) {
       ).innerHTML = `<p class="text-danger m-3">All inputs is required</p>`;
       return true;
     }
+    if (signupArr.length == 0) {
+      document.getElementById(
+        "incorrect"
+      ).innerHTML = `<p class="p-2 text-danger">incorrect email or password</p>`;
+    }
     var email = signinEmail.value;
     var password = signinPassword.value;
     for (var i = 0; i < signupArr.length; i++) {
